@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@suki-ai/constants": ["libs/constants/src/index.ts"],
+      "@suki-ai/react-components": ["libs/react-components/src/index.ts"],
+      "@suki-ai/react-contexts": ["libs/react-contexts/src/index.ts"],
+      "@suki-ai/react-hooks": ["libs/react-hooks/src/index.ts"],
+      "@suki-ai/react-svg": ["libs/react-svg/src/index.ts"],
+      "@suki-ai/utils": ["libs/utils/src/index.ts"],
+      "@suki-ai/utils-node": ["libs/utils-node/src/index.ts"],
+      "@suki-ai/utils-web": ["libs/utils-web/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
