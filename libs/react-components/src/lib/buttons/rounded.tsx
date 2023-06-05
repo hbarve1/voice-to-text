@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const DEFAULT_BUTTON_CLASS =
-  'hover:shadow-2xl text-3xl bg-orange-500 rounded-full w-12 h-12 shadow-sm flex justify-center items-center';
+  'hover:shadow-2xl text-3xl bg-secondary-500 rounded-full w-12 h-12 shadow-sm flex justify-center items-center';
 
 export function ButtonRounded({
   url,

@@ -28,7 +28,7 @@ export function Patient() {
     <>
       <UserCard name={name} age={age} />
 
-      <div className="p-2 m-2 bg-blue-400 rounded-lg shadow-sm">
+      <div className="p-2 m-2 bg-primary-400 rounded-lg shadow-sm">
         <div className="text-gray-200 text-3xl font-semibold flex justify-between items-center">
           Last sessions
           <Link

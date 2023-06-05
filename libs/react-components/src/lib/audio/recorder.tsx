@@ -45,10 +45,10 @@ export function AudioRecorder({
   }, [audioPermissionStatus, selectedDevice]);
 
   return (
-    <div className="bg-red-100 p-2 flex justify-between ">
+    <div className="bg-secondary-100 p-2 flex justify-between ">
       <div className="flex p-4 items-center ">
         <button
-          className="bg-blue-500 rounded-full p-3 text-white shadow-md"
+          className="bg-primary-500 rounded-full p-3 text-white shadow-md"
           onClick={onClickBookmark}
         >
           <IconBookmark />
@@ -82,7 +82,7 @@ export function AudioRecorder({
       </div>
       <div className="flex p-4 items-center ">
         <button
-          className="bg-blue-500 rounded-full p-3 text-white shadow-md"
+          className="bg-primary-500 rounded-full p-3 text-white shadow-md"
           onClick={onClickOption}
         >
           <IconEllipsisVertical />
