@@ -1,6 +1,6 @@
 # Speech to Text
 
-This project is a monorepo structured with Nx and consists of a frontend application built with React.js named 'app' and a backend application built with Express.js and Socket.IO named 'server-realtime'.
+This project is a monorepo structured with Nx and consists of a frontend application built with React.js named 'web-app' and a backend application built with Express.js and Socket.IO named 'server-realtime'.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ To set up and run the applications locally, follow these steps:
 1. Open a terminal and navigate to the `ROOT` directory of repo.
 2. Run `npm install` to install the dependencies.
 3. Set the `VITE_SERVER_REALTIME_URL` environment variable in the `.env` file.
-4. Run `npm run serve -- app` to start the frontend application.
+4. Run `npm run serve -- web-app` to start the frontend application.
 
 ### Backend Application
 
