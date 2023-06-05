@@ -117,6 +117,7 @@ export function NewSessionComponent({ patient }: { patient: any }) {
         onClickOption={handleOnClickOption}
         audioPermissionStatus={audioPermissionStatus}
         selectedDevice={selectedDevice}
+        isRecording={isRecording}
       />
 
       <DialogBox isOpen={isDialogOpen} onClose={handleDialogOnClose}>

@@ -2,7 +2,9 @@ import { ENUM_AUDIO_PERMISSION_STATUS } from '@suki-ai/react-hooks';
 import {
   IconBookmark,
   IconEllipsisVertical,
+  IconExclamationCircle,
   IconMicrophone,
+  IconStop,
 } from '@suki-ai/react-svg';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
@@ -13,12 +15,14 @@ export function AudioRecorder({
   selectedDevice,
   onClickOption,
   audioPermissionStatus,
+  isRecording,
 }: {
   onClickBookmark: () => void;
   onClickMicrophone: () => void;
   onClickOption: () => void;
   selectedDevice: MediaDeviceInfo | undefined;
   audioPermissionStatus: ENUM_AUDIO_PERMISSION_STATUS;
+  isRecording: boolean;
 }) {
   const [audioStatus, setAudioStatus] = useState<string>('');
 
@@ -67,7 +71,13 @@ export function AudioRecorder({
             audioPermissionStatus === ENUM_AUDIO_PERMISSION_STATUS.DENIED
           }
         >
-          <IconMicrophone className="w-10 h-10" />
+          {audioPermissionStatus !== ENUM_AUDIO_PERMISSION_STATUS.GRANTED ? (
+            <IconExclamationCircle className="w-10 h-10" />
+          ) : isRecording ? (
+            <IconStop className="w-10 h-10" />
+          ) : (
+            <IconMicrophone className="w-10 h-10" />
+          )}
         </button>
       </div>
       <div className="flex p-4 items-center ">
