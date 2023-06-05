@@ -2,6 +2,8 @@
 
 This project is a monorepo structured with Nx and consists of a frontend application built with React.js named 'web-app' and a backend application built with Express.js and Socket.IO named 'server-realtime'.
 
+NOTE: This project is still under development. please use chrome browser for better experience.
+
 ## Prerequisites
 
 Before running the applications, make sure you have the following prerequisites installed on your development machine:
